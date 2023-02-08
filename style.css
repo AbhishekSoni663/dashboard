@@ -7,6 +7,11 @@
     box-sizing:border-box;
     /* border: 1px solid red; */
 }
+@media (max-width:970px){
+    .all-section .boxes-ul{
+        display: none;
+    }
+}
 @media(max-width:990px){
     .dash{
         display: none;
@@ -16,9 +21,28 @@
     .container-fluid1 .card-credit-footer{
         display: none;
     }
-    .cont{
+    /* .cont{
         width: 100%;
         display: flex;
+    } */
+    .main-head{
+        width: 100%;
+    }
+    .main-payment{
+        width: 100%;
+    }
+    .main-img{
+        width: 100%;
+    }
+    .main-img img{
+        width: 100%;
+    }
+    .all-section .main-section{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 @media (max-width:800px){
@@ -49,6 +73,8 @@
     width: 100%;
 }
 .all-section{
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: space-around;
 }
@@ -143,7 +169,7 @@
     height:auto;
     display:flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin-top: 10px;
 }
@@ -524,13 +550,7 @@
     font-weight: 600;
     letter-spacing: 1px;
 }
-/* .footer-head p{
-    font-family: 'Roboto', sans-serif;
-    color:rgba(8, 47, 40, 0.802);
-    font-size: 11px;
-    font-weight: 500;
-    letter-spacing: 1px;
-} */
+
 .footer-head p a:hover{
     border-bottom: 1px solid rgba(11, 65, 55, 0.763);
 }
